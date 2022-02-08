@@ -1,5 +1,17 @@
 # Belastingdienst
 
+## Team
+
+Our team consists of 5 Software Engineering students:
+* Aitor Westerhof
+* Theo Krijgsheld
+* Cristina Margarint
+* Yao Xiao
+* Muwaffak Aburshaid
+
+And our assigned TA is **Chris van Riemsdijk**.
+
+
 ## Introduction
 
 Welcome! This is the git repository for the **Belastingdienst I** project, within the Software Engineering course.
@@ -35,3 +47,31 @@ The product owner is Bas Nijhuis.
 Our contacts are : 
 * j.hooiveld@belastingdienst.nl, 
 * bm.nijhuis@belastingdienst.nl, 06-18607403
+
+## Critical Functional Requirement
+
+***TBD***
+
+## Important Functional Requirements
+
+***TBD***
+
+## Useful Functional Requirements
+
+***TBD***
+
+## Non-Functional Requirements
+
+***TBD***
+
+## Won't Do
+
+***TBD***
+
+## Meeting Log
+
+***TBD***
+
+## Change Log
+
+***TBD***
