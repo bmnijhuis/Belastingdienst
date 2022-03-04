@@ -1,77 +1,62 @@
-# Belastingdienst
+# Hello World
 
-## Team
+This project can be used as a starting point to create your own Vaadin application with Spring Boot.
+It contains all the necessary configuration and some placeholder files to get you started.
 
-Our team consists of 5 Software Engineering students:
-* Aitor Westerhof
-* Theo Krijgsheld
-* Cristina Margarint
-* Yao Xiao
-* Muwaffak Aburshaid
+## Running the application
 
-And our assigned TA is **Chris van Riemsdijk**.
+The project is a standard Maven project. To run it from the command line,
+type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
+http://localhost:8080 in your browser.
+
+You can also import the project to your IDE of choice as you would with any
+Maven project. Read more on [how to import Vaadin projects to different 
+IDEs](https://vaadin.com/docs/latest/flow/guide/step-by-step/importing) (Eclipse, IntelliJ IDEA, NetBeans, and VS Code).
+
+## Deploying to Production
+
+To create a production build, call `mvnw clean package -Pproduction` (Windows),
+or `./mvnw clean package -Pproduction` (Mac & Linux).
+This will build a JAR file with all the dependencies and front-end resources,
+ready to be deployed. The file can be found in the `target` folder after the build completes.
+
+Once the JAR file is built, you can run it using
+`java -jar target/helloworld-1.0-SNAPSHOT.jar`
+
+## Project structure
+
+- `MainLayout.java` in `src/main/java` contains the navigation setup (i.e., the
+  side/top bar and the main menu). This setup uses
+  [App Layout](https://vaadin.com/components/vaadin-app-layout).
+- `views` package in `src/main/java` contains the server-side Java views of your application.
+- `views` folder in `frontend/` contains the client-side JavaScript views of your application.
+- `themes` folder in `frontend/` contains the custom CSS styles.
+
+## Useful links
+
+- Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
+- Follow the tutorials at [vaadin.com/tutorials](https://vaadin.com/tutorials).
+- Watch training videos and get certified at [vaadin.com/learn/training](https://vaadin.com/learn/training).
+- Create new projects at [start.vaadin.com](https://start.vaadin.com/).
+- Search UI components and their usage examples at [vaadin.com/components](https://vaadin.com/components).
+- View use case applications that demonstrate Vaadin capabilities at [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
+- Discover Vaadin's set of CSS utility classes that enable building any UI without custom CSS in the [docs](https://vaadin.com/docs/latest/ds/foundation/utility-classes). 
+- Find a collection of solutions to common use cases in [Vaadin Cookbook](https://cookbook.vaadin.com/).
+- Find Add-ons at [vaadin.com/directory](https://vaadin.com/directory).
+- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
+- Report issues, create pull requests in [GitHub](https://github.com/vaadin/platform).
 
 
-## Introduction
+## Deploying using Docker
 
-Welcome! This is the git repository for the **Belastingdienst I** project, within the Software Engineering course.
+To build the Dockerized version of the project, run
 
-<br>
+```
+docker build . -t helloworld:latest
+```
 
-This project is aiming to improve Belastingdienst's service orientation approach, by touching several tasks, such as:
+Once the Docker image is correctly built, you can test it locally using
 
-* Creating a reference application to demonstrate Service Activity Monitoring and Service Versioning guidelines, creating logs that are can be accessed by Splunk dashboards.
-
-* Creating an application that will combine information from various sources (SAM for example) to a run-time visualization of the actual service architecture, including versions of service contracts.
-
-* Contributing to a "SOA maturity assessment" and update the current version of the SOA Adoption plan accordingly.
-
-* Developing a practical way to work "contract first" when creating REST services, and creating a Java service implementation starting from OpenAPI Specs V3 (OAS3), YAML or JSON specification
-
-## Infrastructure
-
-This project's infrastructure is:
-*  RedHat CoreOS Linux (amd64 architecture) with OpenShift platform, 
-* OpenJDK11 ***OR*** OpenJDK17 base image (https://catalog.redhat.com/),
-* Tekton delivery Pipeline. 
-* Splunk for dashboarding and alerting.
-
-## Client
-
-Our client is represented by The Domain Collection and Payments of the Tax Authorities of Netherlands. More precisely, the Integration Business Services Collection and Payments department.
-
-<br>
-
-The product owner is Bas Nijhuis.
-
-Our contacts are : 
-* j.hooiveld@belastingdienst.nl, 
-* bm.nijhuis@belastingdienst.nl, 06-18607403
-
-## Critical Functional Requirement
-
-***TBD***
-
-## Important Functional Requirements
-
-***TBD***
-
-## Useful Functional Requirements
-
-***TBD***
-
-## Non-Functional Requirements
-
-***TBD***
-
-## Will Not Do
-
-***TBD***
-
-## Meeting Log
-
-***TBD***
-
-## Change Log
-
-***TBD***
+```
+docker run -p 8080:8080 helloworld:latest
+```
