@@ -3,7 +3,7 @@
 #
 
 # Use Maven with OpenJDK Docker image
-FROM maven:3.8.4-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-11 AS build
 
 # Copy the files from the src folder into the container
 COPY src /home/app/src
@@ -19,7 +19,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 
 # Use OpenJDK Docker image
-FROM openjdk:17
+FROM openjdk:11
 
 # Copy the JAR file
 COPY --from=build /home/app/target/helloworld-0.0.1-SNAPSHOT.jar /usr/local/lib/helloworld.jar
