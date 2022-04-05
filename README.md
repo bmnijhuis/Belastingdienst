@@ -2,14 +2,7 @@
 
 ## Team
 
-Our team consists of 5 Software Engineering students:
-* Aitor Westerhof
-* Theo Krijgsheld
-* Cristina Margarint
-* Yao Xiao
-* Muwaffak Aburshaid
-
-And our assigned TA is **Chris van Riemsdijk**.
+Our team consists of 5 Software Engineering students.
 
 
 ## Introduction
@@ -42,11 +35,6 @@ Our client is represented by The Domain Collection and Payments of the Tax Autho
 
 <br>
 
-The product owner is Bas Nijhuis.
-
-Our contacts are : 
-* j.hooiveld@belastingdienst.nl, 
-* bm.nijhuis@belastingdienst.nl, 06-18607403
 
 ## Critical Functional Requirement
 
